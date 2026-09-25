@@ -1,0 +1,35 @@
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Database / Secrets / Configs
+.env
+*.db
+*.sqlite3
+
+# Temporary files & dynamic outputs
+temp_audio/
+temp_*/
+*.wav
+*.mp3
+*.webm
+*.log
+
+# Byte-compiled / Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.ds_store
+
+# Dynamic Generated Reports (optional - exclude user output)
+reports/*.png
+reports/*.csv*.pkl
+*.pkl
+backend/models/*.pkl
