@@ -332,8 +332,7 @@ def predict():
         }
 
         print(f"[API] ✅ Prediction complete: emotion={emotion}, stress={stress_level}, lie={lie_result['lie_probability']}")
-
-        # Save report to DB for the logged-in user
+        
         try:
             current_user = get_current_user(request)
             if current_user:
