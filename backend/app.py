@@ -7,6 +7,7 @@ import os
 import hashlib
 import secrets
 from datetime import datetime
+from flask import Flask
 
 from modules.database import (
     get_db, close_db,
@@ -35,6 +36,8 @@ app.config['MAX_CONTENT_LENGTH'] = 50 * 1024 * 1024  # 50 MB max
 
 # Init DB
 get_db()
+
+
 
 
 # =====================
