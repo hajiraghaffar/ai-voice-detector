@@ -8,9 +8,12 @@
     },
     "frontend": {
       "root": "frontend",
-      "framework": "vite",
-      "installCommand": "npm install --production=false",
-      "buildCommand": "npm run build"
+      "framework": "vite"
+    }
+  },
+  "functions": {
+    "backend/app.py": {
+      "excludeFiles": "{tests/**,**/test_*.py,sample-data/**,*.wav,*.mp3,*.pt,*.bin,*.onnx}"
     }
   },
   "rewrites": [
